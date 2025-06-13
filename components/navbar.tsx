@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { FranchiseModal } from "@/components/franchise-modal"
 import { cn } from "@/lib/utils"
 import Image from 'next/image';
-// import logo from "@/public/logo.png"; // Adjust the path as necessary
+import logo from "@/public/logo.png"; // Adjust the path as necessary
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
