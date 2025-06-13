@@ -94,28 +94,28 @@ export default function Home() {
   const dishes = [
     {
       name: "Makhani Paneer Tikka Pizza",
-      Image: dish1,
+      Image:"/public/pizza.JPG" ,
       description: "Pizza base with makhani sauce, paneer, onions, and capsicum — available in 8 / 10 inch sizes.",
       macros: { protein: "19/32g", carbs: "45/55g" },
       popular: true,
     },
     {
       name: "Hummus and Chicken Protein Wrap",
-      Image: dish2,
+      Image: "/public/wrap1.JPG",
       description: "Tortilla wrap filled with grilled chicken, hummus, roasted pappads, paprika, and pickled onion.",
       macros: { protein: "33g", carbs: "29g" },
       popular: true,
     },
     {
       name: "Grilled Sriracha Paneer Burger",
-      Image: dish3,
+      Image: "/public/burgar.jpg",
       description: "Burger with grilled paneer, sriracha, mayo, onions, lettuce, and tomatoes.",
       macros: { protein: "27g", carbs: "26g" },
       popular: true,
     },
     {
       name: "Creamy Makhani Meal Bowl",
-      Image: dish4,
+      Image: "/public/creamy makhani meal bowl.jpg",
       description: "Rice bowl with creamy makhani gravy, vegetables, salad, and chicken.",
       macros: { protein: "30g", carbs: "45g" },
       popular: true,
