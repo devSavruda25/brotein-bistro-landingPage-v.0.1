@@ -7,9 +7,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion"
 import { useInView as useInViewHook } from "react-intersection-observer"
-import hero from "@/public/hero.jpg"
-import logo from "@/public/Brotein Bistro.png"
-import footerlogo from "@/public/logo.png"
+
 
 import {
   ArrowRight,
@@ -90,28 +88,28 @@ export default function Home() {
   const dishes = [
     {
       name: "Makhani Paneer Tikka Pizza",
-      Image:"/public/pizza.JPG" ,
+      Image:"/pizza.JPG" ,
       description: "Pizza base with makhani sauce, paneer, onions, and capsicum — available in 8 / 10 inch sizes.",
       macros: { protein: "19/32g", carbs: "45/55g" },
       popular: true,
     },
     {
       name: "Hummus and Chicken Protein Wrap",
-      Image: "/public/wrap1.JPG",
+      Image: "/wrap1.JPG",
       description: "Tortilla wrap filled with grilled chicken, hummus, roasted pappads, paprika, and pickled onion.",
       macros: { protein: "33g", carbs: "29g" },
       popular: true,
     },
     {
       name: "Grilled Sriracha Paneer Burger",
-      Image: "/public/burgar.jpg",
+      Image: "/burgar.jpg",
       description: "Burger with grilled paneer, sriracha, mayo, onions, lettuce, and tomatoes.",
       macros: { protein: "27g", carbs: "26g" },
       popular: true,
     },
     {
       name: "Creamy Makhani Meal Bowl",
-      Image: "/public/creamy makhani meal bowl.jpg",
+      Image: "/creamy makhani meal bowl.jpg",
       description: "Rice bowl with creamy makhani gravy, vegetables, salad, and chicken.",
       macros: { protein: "30g", carbs: "45g" },
       popular: true,
@@ -311,7 +309,7 @@ export default function Home() {
         <div ref={heroInViewRef} className="absolute inset-0 z-0">
           <motion.div style={{ scale: heroScale, opacity: heroOpacity, y: heroY }} className="relative h-full w-full">
             <Image
-              src={hero}
+              src="/hero.JPG"
               alt="Protein bowl background"
               fill
               className="object-cover"
@@ -1189,7 +1187,7 @@ export default function Home() {
               className="mb-6"
             >
               <motion.div className="mb-4" whileHover={{ scale: 1.05 }}>
-                <Image src={footerlogo} alt="Brotein Bistro Logo" width={100} height={100} loading="lazy" />
+                <Image src="/logo.png" alt="Brotein Bistro Logo" width={100} height={100} loading="lazy" />
               </motion.div>
               <p className="text-gray-400 mb-6">
                 Fuel your fitness journey with delicious, protein-rich meals crafted for health-conscious food lovers in
